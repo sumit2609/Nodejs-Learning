@@ -1,6 +1,7 @@
 const express = require("express")
 const dotenv = require("dotenv").config()
 const connectDb = require("./config/dbConnection")
+const redisClient = require("./config/redisConnection")
 
 connectDb()
 const app = express()
